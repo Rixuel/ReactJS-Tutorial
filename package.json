@@ -2,9 +2,8 @@
   "name": "reactjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-	"build": "browserify -t [ babelify --presets [ react ] ] src/index.js -o build/bundle.js"
+	"build": "browserify -t [ babelify --presets [ react ] ] src/index.js -o bundle.js"
   },
   "author": "",
   "license": "ISC",
