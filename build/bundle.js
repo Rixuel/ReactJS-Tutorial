@@ -20524,33 +20524,20 @@ module.exports = React.createClass({
 });
 
 },{"react":182}],185:[function(require,module,exports){
-var React = require('react');
-
-module.exports = React.createClass({
-  displayName: 'exports',
-
-  render: function () {
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'h2',
-        null,
-        'Hallow World'
-      )
-    );
-  }
-});
-
-},{"react":182}],186:[function(require,module,exports){
 var ReactDOM = require('react-dom');
 var React = require('react');
 
 var Chat = require('./Chat');
-var HelloWorld = require('./HelloWorld');
+//var HelloWorld = require('./HelloWorld');
 
 ReactDOM.render(React.createElement(Chat, null), document.getElementById('app'));
 
-ReactDOM.render(React.createElement(HelloWorld, null), document.getElementById('app2'));
+const hw = React.createElement(
+  'h3',
+  null,
+  'Hello World!'
+);
 
-},{"./Chat":183,"./HelloWorld":185,"react":182,"react-dom":2}]},{},[186]);
+ReactDOM.render(hw, document.getElementById('helloworld'));
+
+},{"./Chat":183,"react":182,"react-dom":2}]},{},[185]);
